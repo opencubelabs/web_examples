@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Storage Example</title>
+
+	<script type="text/javascript">
+		function store_data(){
+			var data = document.getElementById('data').value;
+
+			localStorage.setItem('ocl_web', data);
+
+			console.log('data stored!')
+		}
+
+		function get_data(){
+			console.log(localStorage.getItem('ocl_web'))
+			document.getElementById('data_p').innerHTML = localStorage.getItem('ocl_web');
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<input type="text" id="data" placeholder="Enter Data">
+		<br>
+		<button onclick="store_data();">Store Data</button>
+		<br>
+		<button onclick="get_data();">Get Data</button>
+		<br>
+		<p id="data_p"></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OCL Web Dev Test</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- JS -->
+	<script src="js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#btn3').click(function(){
+				$('#title').css('color', '#ff4500');
+			})
+		})
+	</script>
+
+</head>
+<body>
+	<center>
+		<h1 id="title">OCL Web Dev Test</h1>
+	</center>
+
+	<br><br>
+
+	<div>
+		<center>
+			<button id="btn" onclick="getLocation()">Get Location</button>
+		</center>
+	</div>
+
+	<div>
+		<center>
+			<button id="btn2" onclick="showLoc()">Show Location</button>
+		</center>
+	</div>
+
+	<div>
+		<center>
+			<button id="btn3">Click Me!</button>
+		</center>
+	</div>
+
+	<!--  -->
+</body>
+</html>

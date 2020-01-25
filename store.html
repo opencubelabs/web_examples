@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Storage Example</title>
+
+	<script type="text/javascript">
+		/*function store(data){
+			localStorage.setItem('data_loc', data)
+
+			console.log('data stored')
+		}
+
+		function get(){
+			console.log(localStorage.getItem('data_loc'))
+
+			alert(localStorage.getItem('data_loc'))
+		}*/
+
+		$(document).ready(function(){
+			$('#store').click(function(){
+				localStorage.setItem('data_loc', data)
+			})
+
+			$('#get').click(function(){
+				alert(localStorage.getItem('data_loc'))
+			})
+		})
+	</script>
+</head>
+<body>
+<button id="store" onclick="store('sampele data 1')">Store</button>
+
+<button id="get" onclick="get()">Get</button>
+</body>
+</html>

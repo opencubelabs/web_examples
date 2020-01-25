@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Title</title>
+
+	<!-- CSS Styles -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style type="text/css"></style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Javascripts -->
+	<script type="text/javascript">
+
+		/*function click_me(){
+			console.log('Color changed!!');
+
+			document.getElementById('para1').style.color = '#009688';
+		}*/
+
+		$(document).ready(function(){
+			$('#btn').click(function(){
+				console.log('Color changed!!');
+				
+				$('#para1').css('color', '#009688')
+			})
+		})
+		
+	</script>
+
+</head>
+<body>
+
+	<h1>This is a big heading</h1>
+	<h2>This is from h2</h2>
+	<h3>I am from h3</h3>
+
+	<p class="para" id="para1">This is a test para...This is a test para...This is a test para...This is a test para...This is a test para...<span style="font-weight: bold;">This is a test para...</span>This is a test para...This is a test para...This is a test para...This is a test para...This is a test para...This is a test para...This is a test para...</p>
+
+	<p class="para" id="para2">This is para 2...This is para 2...This is para 2...This is para 2...This is para 2...This is para 2...This is para 2...This is para 2...This is para 2...This is para 2...This is para 2...This is para 2...This is para 2...</p>
+
+	<div>
+		<button id="btn" onclick="click_me()">Click Me!</button>
+	</div>
+
+	<img src="">
+
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

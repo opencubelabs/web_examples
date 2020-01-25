@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			$('#click').click(function(){
+				console.log('Clicked!!');
+
+				$('#load').css('display', 'block');
+
+				$.get('https://postcards.swizzlebooks.com/get_account_status?name=Suraj%20Jana&email=surajjana2@gmail.com', function(data){
+					console.log(data);
+
+					$('#load').css('display', 'none');
+
+				})
+			})
+
+		})
+
+		function show(){
+			document.getElementById('load').style.display = 'block';
+		}
+
+	</script>
+</head>
+<body>
+<button id="click">Click Me!</button>
+<br><br>
+<p id="load" style="color: red; display: none;">Loading...</p>
+<br><br>
+<button onclick="show()">Show</button>
+</body>
+</html>

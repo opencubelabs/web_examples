@@ -1,0 +1,25 @@
+p {
+	color: rgb(0,255,200);
+	font-weight: bold;
+}
+
+#para1 {
+	font-size: 30px;
+}
+
+.paras {
+
+	font-size: 20px;
+}
+
+#para2 {
+	color: #2d2d2d;
+}
+
+#para3 {
+	color: #ff4512;
+}
+
+img {
+	width: 350px;
+}
